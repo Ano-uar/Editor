@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+    <title>test</title>
+    <style>
+      .brand{
+          width: 65%;
+          margin: auto;
+      }
+      #text{
+          width: 800px;
+          margin-right:400px;
+          margin-left: 400px;
+          padding: 8px;
+          margin-top: 10px;
+          border-radius: 25px;
+          border: 2.5px solid rgb(78, 78, 78);
+      }
+      #button{
+        margin-top: 15px;
+        text-align: center;
+        margin-left: 400px;
+        margin-right: 400px;
+        display: flex;
+        justify-content: space-evenly;
+      }
+      #button button{
+        width: 47.5%;
+      }
+      #output_title{
+        text-align: center;
+        border-bottom: 1px solid rgb(80, 80, 80);
+        padding: 10px 0;
+        font-size: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        display: none;
+      }
+      #code{
+        display: none;
+      }
+    </style>
+  </head>
+    
+  <body>
+    <!-- Image and text -->
+      <nav class="navbar navbar-dark bg-dark">
+        <div class="brand">
+        <a class="navbar-brand" href="https://ano-uar.github.io/web/" target="_blank" title="Our website">
+         <img src="Untitled1.png" width="30" height="30" class="d-inline-block align-top" alt="Error" loading="lazy">
+         Windroid Pro
+        </a>
+      </div>
+      </nav>
+      <div id="button">
+        <button type="button" class="btn btn-outline-danger" id="remove" title="Remove all codes" >Remove</button>
+        <button type="button" class="btn btn-outline-success" id="run" title="Run codes">Output</button>
+        
+      </div>
+      <main>
+        <textarea name="text" id="text"  rows="24" autocomplete="off" spellcheck="false" placeholder="Your HTML code">
+          <!DOCTYPE html>
+          <html>
+          <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Windroid Pro - Editor</title>
+          </head>
+              <style>
+
+              </style>
+          <body>
+             
+              <script>
+
+              </script>
+          </body>
+          </html>
+        </textarea>
+        <div id="button">
+          <button type="button" class="btn btn-outline-success" id="code" title="Return to HTML code" >Retune to HTML code</button> 
+        </div>
+        
+      </main>
+      <p id="output_title">Output</p> 
+        <div id="output">
+           
+        </div>
+
+        
+
+      
+      
+      <script src="App.js"></script>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
+  </body>
+</html>
